@@ -1,0 +1,318 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipography */
+
+body{
+font-family: 'Rubik', sans-serif;
+}
+
+a{
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+a:hover{
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+
+/* Colori */
+
+.green_color{
+  color: #1db954;
+}
+
+
+
+/* layout */
+
+.wrapper{
+   width: 100%;
+   height: 100vh;
+   background-color: red;
+}
+
+/* main_content */
+
+.main_content{
+  height: calc(100% - 80px);
+  width: 100%;
+  background: lightblue;
+}
+
+/* sidebar */
+
+.sidebar{
+  height: 100%;
+  width: 200px;
+  background: orange;
+  float: left;
+  overflow: auto;
+  background-color: rgb(18, 18, 18);
+}
+
+ /* sidebar_top */
+
+.sidebar_top{
+  height: 90%;
+  width: 100%;
+  padding: 20px;
+  overflow: auto;
+}
+
+.logo_sidebar_top{
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.logo_sidebar_top img{
+max-width: 100%;
+}
+
+.sidebar_nav{
+  height: auto;
+  width: 100%;
+  font-size: 16px;
+}
+
+.sidebar_nav ul li:first-child{
+  margin-bottom: 10px;
+}
+
+.sidebar_nav ul li i{
+  margin-right: 10px;
+}
+
+.sidebar_top_libreria {
+  margin-top: 20px;
+}
+
+
+.sidebar_top_libreria span{
+  color: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+.sidebar_top_libreria ul li{
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* sidebar_bottom */
+
+.sidebar_bottom{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+/* content */
+
+.content{
+  height: 100%;
+  width: calc(100% - 200px);
+  background-color: rgb(24, 24, 24);
+  float: left;
+  overflow: auto;
+}
+
+.content_navbar{
+  padding: 40px  30px 10px 30px;
+}
+
+.content_navbar ul{
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content_navbar ul li{
+  padding:0 10px;
+  margin-bottom: 20px;
+}
+
+.content_navbar a{
+  font-size: 16px;
+}
+
+/* active a navigatore content */
+
+.content_navbar ul li:first-child a{
+  color: white;
+  position: relative;
+}
+
+.content_navbar ul li:first-child a:after{
+  content: "";
+  height: 2px;
+  width: 40px;
+  background: #1db954;
+  position: absolute;
+  bottom:  -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section_content{
+  height: auto;
+  width: 100%;
+}
+
+.header_content{
+  height: auto;
+  width: 100%;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.header_content h1{
+  margin-top: 0px;
+  font-weight: 700;
+  font-size: 42px;
+  color: white;
+}
+
+.header_content a{
+  font-size: 18px;
+}
+
+.box_playlist_content{
+  height: auto;
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card_playlist{
+  height: 280px;
+  min-width: 235px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.sezione_album_artista {
+  height: auto;
+  width: 100%;
+
+}
+.sezione_album_artista h2 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+.sezione_album_artista span {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+}
+
+
+
+/* footer */
+
+.footer{
+  height: 80px;
+  width: 100%;
+  background-color: rgb(40, 40, 40);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+/* footer_left */
+
+.section_footer_left{
+  height: 100%;
+  width: 190px;
+}
+
+.little_box_song{
+  height: 100%;
+  width: 60px;
+  background-image: url("copertina1.jpg");
+  background-size: contain;
+  float: left;
+}
+
+.title_artist{
+  height: 100%;
+  width: calc(100% - 60px);
+  float: left;
+}
+
+.title_artist{
+  height: 100%;
+  width: calc(100% - 60px);
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_artist ul {
+  margin-bottom: 0px;
+}
+
+.title_artist ul li:first-child a{
+font-size: 16px;
+color: #1db954;
+}
+
+.title_artist ul li:last-child a{
+font-size: 14px;
+margin-top: 10px;
+}
+
+
+
+/* footer_center */
+
+.section_footer_center{
+  height: 100%;
+  width: 50%;
+  background: violet;
+}
+/* footer_right */
+
+.section_footer_right{
+  height: 100%;
+  width: 20%;
+  background: orange;
+}
