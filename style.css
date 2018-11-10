@@ -399,6 +399,11 @@ position: absolute;
   transform: translateY(-25%);
 }
 
+.down_footer_center .bar_sound .circle_sound:active{
+  border: 2px solid white;
+  background: linear-gradient(135deg, rgba(14,14,14,1) 0%,rgba(255,255,255,1) 100%);
+}
+
 
 /* footer_right */
 
