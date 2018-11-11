@@ -107,6 +107,7 @@ max-width: 100%;
   font-size: 14px;
 }
 
+
 /* sidebar_bottom */
 
 .sidebar_bottom{
@@ -119,7 +120,13 @@ max-width: 100%;
   font-size: 14px;
 }
 
-/* content */
+/* sidebar_768 */
+
+.sidebar_768{
+  display: none;
+}
+
+/* content----------------------------------------> */
 
 .content{
   height: 100%;
@@ -242,7 +249,7 @@ max-width: 100%;
 
 
 
-/* footer */
+/* footer---------------------------------> */
 
 .footer{
   height: 80px;
@@ -264,10 +271,44 @@ max-width: 100%;
 .little_box_song{
   height: 100%;
   width: 60px;
-  background-image: url("copertina1.jpg");
-  background-size: contain;
   float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay a i{
+  color: white;
+  opacity: 0;
+}
+
+.little_box_song:hover .overlay{
+background: #1db954;
+transition: 0.5s;
+}
+
+.little_box_song .overlay:hover a i{
+color: white;
+opacity: 1;
+transition: 0.5s;
+}
+
+
+
 
 .title_artist{
   height: 100%;
@@ -324,7 +365,7 @@ max-width: 100%;
 
 .section_footer_center{
   height: 100%;
-  width: 400px;
+  width: 50%;
   margin-right: 10px;
   margin-left: 10px;
 }
