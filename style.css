@@ -51,7 +51,6 @@ a:hover{
 .sidebar{
   height: 100%;
   width: 200px;
-  background: orange;
   float: left;
   overflow: auto;
   background-color: rgb(18, 18, 18);
@@ -373,7 +372,7 @@ max-width: 100%;
 
 
 .down_footer_center .bar_sound{
-width: 80%;
+width: 90%;
 margin-left: 20px;
 margin-right: 20px;
 }
@@ -413,6 +412,7 @@ position: absolute;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  font-size: 14px;
 }
 
 .section_footer_right i{
@@ -465,4 +465,127 @@ position: absolute;
 .circle_sound:active{
   border: 2px solid white;
   background: linear-gradient(135deg, rgba(14,14,14,1) 0%,rgba(255,255,255,1) 100%);
+}
+
+/* @media query */
+
+/* sidebar_768-------------------------------> */
+
+@media screen and (max-width: 768px) {
+  .sidebar{
+    height: 100%;
+    width: 100px;
+    overflow: auto;
+  }
+
+  .sidebar_top{
+    display: none;
+  }
+
+  .sidebar_bottom{
+    display: none;
+  }
+
+  .sidebar_768{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+
+  .sidebar_768_top{
+    height: 400px;
+    width: 100%;
+  }
+
+  .sidebar_768_top .icon_768{
+  }
+
+.logo_spotify_768{
+  height: 100px;
+  width: 100%;
+  background-color: #1db954;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+  color: white;
+}
+
+.icon_768{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.sidebar_768_bottom{
+  height: 100px;
+  width: 100%;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .content{
+    height: 100%;
+    width: calc(100% - 100px);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+/* footer_left */
+
+  .section_footer_left{
+    width: auto;
+  }
+
+/* footer_center */
+
+  .section_footer_center{
+    height: 100%;
+    width: 250px;
+  }
+
+  .up_footer_center i{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    color:rgba(255, 255, 255, 0.5);
+  }
+
+  .up_footer_center .fa-pause-circle{
+    font-size: 20px;
+  }
+
+  .down_footer_center span{
+    font-size: 10px;
+  }
+
+  .down_footer_center .bar_sound{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+/* footer_right */
+
+  .section_footer_right{
+    width: auto;
+    justify-content: flex-end;
+  }
+
+  .section_footer_right .fa-bars,
+  .section_footer_right .fa-desktop,
+  .section_footer_right .fa-expand {
+    display: none;
+  }
 }
