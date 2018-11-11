@@ -590,6 +590,10 @@ position: absolute;
     width: auto;
   }
 
+  .section_footer_left .title_artist .fa-plus{
+    display: none;
+  }
+
 /* footer_center */
 
   .section_footer_center{
