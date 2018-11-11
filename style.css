@@ -292,31 +292,31 @@ max-width: 100%;
 }
 
 .title_artist ul li:first-child a{
-font-size: 14px;
-color: #1db954;
+  font-size: 14px;
+  color: #1db954;
 }
 
 .title_artist ul li:first-child i{
-margin-left: 8px;
-color:rgba(255, 255, 255, 0.5);
+  margin-left: 8px;
+  color:rgba(255, 255, 255, 0.5);
 }
 
 .title_artist ul li:first-child i:hover{
-cursor: pointer;
-color: white;
+  cursor: pointer;
+  color: white;
 }
 
 .title_artist ul li:first-child a:hover{
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .title_artist ul li:last-child a{
-font-size: 12px;
-margin-top: 10px;
+  font-size: 12px;
+  margin-top: 10px;
 }
 
 .title_artist ul li:last-child a:hover{
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 
@@ -340,19 +340,18 @@ text-decoration: underline;
 }
 
 .up_footer_center i{
-margin-left: 20px;
-margin-right: 20px;
-font-size: 14px;
-color:rgba(255, 255, 255, 0.5);
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 14px;
+  color:rgba(255, 255, 255, 0.5);
 }
 
 .up_footer_center i:hover{
-
-color:rgba(255, 255, 255, 1);
+  color:rgba(255, 255, 255, 1);
 }
 
 .up_footer_center .fa-pause-circle{
-font-size: 22px;
+  font-size: 22px;
 }
 
 
@@ -464,6 +463,6 @@ position: absolute;
 }
 
 .circle_sound:active{
-border: 2px solid white;
-background: linear-gradient(135deg, rgba(14,14,14,1) 0%,rgba(255,255,255,1) 100%);
+  border: 2px solid white;
+  background: linear-gradient(135deg, rgba(14,14,14,1) 0%,rgba(255,255,255,1) 100%);
 }
